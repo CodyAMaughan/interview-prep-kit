@@ -1,0 +1,17 @@
+{
+  "name": "interview-prep-kit",
+  "owner": {
+    "name": "Cody Maughan"
+  },
+  "metadata": {
+    "description": "A prep-only interview-preparation plugin: profile + JD fit, gap-driven curriculum, STAR story building, drills/mocks, and company research. Ships the machine, generates a private workspace.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "interview-prep-kit",
+      "source": "./",
+      "description": "Prep-only interview workflow. Run `prep-intake` to ingest your context and generate your private prep workspace."
+    }
+  ]
+}

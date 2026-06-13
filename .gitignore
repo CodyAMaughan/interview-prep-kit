@@ -1,0 +1,41 @@
+# ── Personal prep workspace (NEVER commit) ───────────────────────────────────
+# This is where your resume, JDs, profile, stories, and generated artifacts live.
+# It is generated per-user by `prep-intake`. Keeping it ignored means a clone of
+# the plugin can never accidentally commit your personal data.
+workspace/
+prep/
+
+# ── Secrets & local env ──────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa
+id_ed25519
+credentials
+*.pfx
+*.p12
+
+# ── Personal documents that must stay out of the shared repo ─────────────────
+# (Belong only in the gitignored workspace; the secret-scan hook also guards these.)
+*.pdf
+*.docx
+resume*
+résumé*
+cover-letter*
+linkedin*.csv
+linkedin*.zip
+
+# ── Agent-first: keep the curated memory wiki, ignore the volatile staging buffer
+.agent/memory/_staging.md
+
+# ── OS / editor cruft ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+__pycache__/
+*.pyc
+.venv/

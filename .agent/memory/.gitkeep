@@ -1,0 +1,2 @@
+# The capture-learnings memory loop writes progress files here
+# (.agent/memory/progress/*.md). _staging.md is gitignored.
