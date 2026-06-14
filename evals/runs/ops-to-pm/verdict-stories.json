@@ -1,0 +1,17 @@
+{
+  "artifact": "stories",
+  "persona": "ops-to-pm",
+  "criteria": [
+    {"id": "S1", "score": 5, "evidence": "Story 1 has S/T/A/R/L all present with three distinct actions: 'I picked the three sites most different... Then I wrote down what was actually common... Then I turned that into a standard playbook'", "reason": "Stories 1-4 all carry complete S/T/A/R/L with three concrete, distinct actions. Story 5 is intentionally blank (no source material) and correctly flagged rather than padded; Story 6 is honestly labeled 'framing, not STAR'. The bank as a whole is structurally complete."},
+    {"id": "S2", "score": 5, "evidence": "'I owned the onboarding program end-to-end', 'I ran the staffing math and showed...', 'I sat with the floor staff and pulled specific failures out of \"it's confusing\"'", "reason": "Consistent first-person individual ownership across every story; the candidate's own decisions are explicit, not team 'we' language."},
+    {"id": "S3", "score": 5, "evidence": "Real numbers trace exactly to persona (11->7 wks, $220k/yr, ~1/3 errors, 5 sites, 14 clinics). Qualitative results are flagged: 'far fewer escalations... ⚠️ needs a number — how many fewer escalations, or vs. what baseline?'", "reason": "Every number traces to the persona; zero fabrication. Where the source lacks a number (escalation reduction, team size, vendor count, issues triaged) the artifact explicitly marks ⚠️ needs a number rather than inventing one. This is exactly the correct anti-fabrication behavior."},
+    {"id": "S4", "score": 5, "evidence": "Story 1 L: 'When there's no playbook, sample the extremes first — what survives the most-different cases is your real standard.' Story 3 L: '\"It's confusing\" is never a requirement — your job is to convert user pain into a ranked list someone can ship against.'", "reason": "Every STAR story has a crisp, generalizable one-sentence lesson; the punchline is never skipped."},
+    {"id": "S5", "score": 4, "evidence": "JD->story map covers structured thinking, judgment, disagreeing up, customer synthesis, prioritization, stakeholder mgmt, vendor ownership, failure, and 'why product'. 'Strengthen before the room: tighten to 90s'.", "reason": "6 stories with a deliberate-reuse JD map and backups; covers the role's archetypes well. Minor slack: several stories carry meta-move + strengthen notes that make them currently longer than a tight 90s delivery, and the artifact itself flags they need tightening — so reuse/coverage is strong but spoken-length is a self-acknowledged TODO."},
+    {"id": "S6", "score": 5, "evidence": "Story 1 (judgment-under-ambiguity), Story 2 (disagreeing-up phased rollout), Story 3 ('worked between users and engineers', framed transferable to 'PM discovery/backlog prioritization'), plus Story 6 honest switch framing.", "reason": "All expected archetypes (judgment-under-ambiguity, disagreeing-up, cross-functional/translation framed as transferable) are covered. No story claims she built software or owned a product; Story 6 names the gap plainly without overselling."}
+  ],
+  "mean": 4.83,
+  "min": 4,
+  "red_flags": [],
+  "pass": true,
+  "highest_leverage_fix": "None required — artifact passes. Optional polish: have build-stories emit a separate 'spoken core' (S/T/A/R/L only) distinct from the meta-move/strengthen coaching notes, so the 90s-deliverable version is visually separated from prep annotations."
+}

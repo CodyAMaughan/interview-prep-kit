@@ -1,0 +1,41 @@
+{
+  "artifact": "profile",
+  "persona": "no-numbers",
+  "criteria": [
+    {
+      "id": "P1",
+      "score": 5,
+      "evidence": "~5-year full-stack software engineer (React/Node/TypeScript, SQL, some AWS) ... strong on responsibilities, but the résumé carries **zero quantified impact**, so every claim needs a number before the room.",
+      "reason": "One sentence; years + domain + tech all trace to the persona (~5 yrs, React/Node/TS/SQL/some AWS). The named strongest signal — that the candidate is responsibility-rich but evidence-poor — is exactly the real signal for this persona. No invented impact attached."
+    },
+    {
+      "id": "P2",
+      "score": 5,
+      "evidence": "Six-row evidence inventory covering Lattice (web app, checkout rebuild, checkout bug incident, onboarding/testing), Cedar & Pine (internal tools + legacy migration, on-call/incident response).",
+      "reason": "Captures every load-bearing experience in the persona, including ones buried in intake answers (checkout rebuild, the bug incident, testing-practice leadership). Nothing major dropped. The 'Quantified impact' column is correctly all ⚠️-flagged, which is the right behavior for raw material that has no numbers."
+    },
+    {
+      "id": "P3",
+      "score": 5,
+      "evidence": "**Quality / testing culture** — wrote tests, improved a team's testing practices, did code review and onboarding (Cedar & Pine + Lattice). Maps directly to the JD's 'own the quality of what you ship.'",
+      "reason": "Every strength cites a specific experience and most are honestly hedged ('Defensible as breadth, not yet as measured impact', 'Strong story surface; weak on numbers'). No free-floating adjectives; the candor about what is defensible vs unproven is exactly right."
+    },
+    {
+      "id": "P4",
+      "score": 5,
+      "evidence": "**Every result needs a number.** ... dig up real numbers (analytics, dashboards, PR history, incident tickets) for at least: Checkout rebuild: conversion / completion rate, latency, error rate ... Checkout bug: number of failed orders, duration ... Testing practices: test coverage ...",
+      "reason": "Open questions are long and specific, matching the expectations file almost line for line (conversion before/after, failed-order count + duration, coverage before/after, page-performance numbers). Genuinely missing info (backend depth, SQL depth, AWS production use, exact tenure) is asked for, not guessed. Best-possible behavior for this trap persona."
+    },
+    {
+      "id": "P5",
+      "score": 5,
+      "evidence": "All six 'Quantified impact' cells read '⚠️ needs a number'; the only number anywhere is '~5 years', which appears verbatim in the persona (Software Engineer · ~5 years).",
+      "reason": "Cross-checked every claim against the persona: all experiences and the single number trace. Zero fabricated metrics — no invented conversion %, latency, coverage, or order counts. This is the correct anti-fabrication output."
+    }
+  ],
+  "mean": 5.0,
+  "min": 5,
+  "red_flags": [],
+  "pass": true,
+  "highest_leverage_fix": ""
+}

@@ -45,10 +45,13 @@ and the `coach` grader exists to tell you when an answer is weak — not to feed
 2. **Run the spine — `prep-intake`.** In Claude Code:
    > "Start interview prep — here's my resume and the JD."
 
-   It creates a private `workspace/` (gitignored), ingests your context, and writes:
-   - `workspace/profile.md` — your evidence-based candidate profile
-   - `workspace/fit-<company>.md` — your experience mapped to the JD + a prioritized **gap map**
-   - `workspace/plan.md` — a timeline- and round-aware prep plan
+   It creates a private `workspace/` (gitignored), ingests your context, and writes candidate-level
+   files at the base plus **one subfolder per job** so multiple roles stay organized:
+   - `workspace/profile.md` — your evidence-based candidate profile (shared across jobs)
+   - `workspace/<job-slug>/fit.md` — your experience mapped to that JD + a prioritized **gap map**
+   - `workspace/<job-slug>/plan.md` — a timeline- and round-aware prep plan for that job
+   - …with `stories.md` at the base (reusable), and `research/`, `tracks/`, `cheatsheets/` filling in
+     under each `<job-slug>/` as you run the other skills.
 
 3. **Run the output modes your plan points you to:**
 

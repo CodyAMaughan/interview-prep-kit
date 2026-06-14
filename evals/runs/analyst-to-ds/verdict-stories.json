@@ -1,0 +1,17 @@
+{
+  "artifact": "stories",
+  "persona": "analyst-to-ds",
+  "criteria": [
+    {"id": "S1", "score": 5, "evidence": "Every story has S/T/A/R/L; e.g. Story 1 has S (pricing A/B test), T (confound mid-test), A (three steps: segment cohort / re-run clean / dual-report), R (4.1->5.0% held), L (name the confound out loud).", "reason": "All five STAR elements present in all 5 stories, with three distinct, decision-flavored actions each."},
+    {"id": "S2", "score": 4, "evidence": "'I identified and segmented out the campaign-exposed cohort... I re-ran... I reported both reads' (Story 1); 'I made the case for an A/B test' (Story 2). Story 2 R uses 'we didn't ship it'.", "reason": "Individual ownership is consistently clear via 'I' for the decisions; a couple of collective 'we' on outcomes (we didn't ship) is contextually accurate and minor."},
+    {"id": "S3", "score": 5, "evidence": "4.1%->5.0% (persona l.19), -8% retention (persona l.44), AUC ~0.78 (persona l.21), ~6 analyst-hrs/wk (persona l.25). Story 4 R: 'needs a number - outcome is in progress'.", "reason": "Every number traces to the persona; zero fabrication. The production-ML story correctly flags its result rather than inventing a deployment metric. Exactly the anti-trap behavior required."},
+    {"id": "S4", "score": 5, "evidence": "L lines are generalizable, e.g. 'A primary metric without a guardrail can hide the real damage' (Story 2); 'Owning a real gap with a concrete plan reads as judgment' (Story 4).", "reason": "Each story has one tight, transferable lesson."},
+    {"id": "S5", "score": 4, "evidence": "JD->story map maps each JD line to a primary + backup story with reuse (Story 1/2 reused as backups); 'practice each aloud, timed to ~90s'. Some bullets (Story 1 A) are dense for a 90s spoken delivery.", "reason": "5 stories with a deliberate reuse map covering the role's question types; slight length risk but the 'Strengthen before the room' notes flag tightening."},
+    {"id": "S6", "score": 5, "evidence": "Story 1 = judgment-under-ambiguity (confound); Story 2 = disagreeing-up/influence-with-data (paywall retention catch); Story 3+4 = modeling told honestly, Story 4 explicitly names the production-ML gap and does NOT claim deployment.", "reason": "Covers exactly the expected archetypes; the modeling story is split into offline-craft (S3) and honest-gap (S4), neither inflating production ML."}
+  ],
+  "mean": 4.67,
+  "min": 4,
+  "red_flags": [],
+  "pass": true,
+  "highest_leverage_fix": "None required - passing. Optional: have build-stories trim multi-clause Action bullets so each story is verifiably <=90s spoken, not just labeled so."
+}

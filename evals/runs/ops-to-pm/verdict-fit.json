@@ -1,0 +1,41 @@
+{
+  "artifact": "fit",
+  "persona": "ops-to-pm",
+  "criteria": [
+    {
+      "id": "F1",
+      "score": 5,
+      "evidence": "Table maps every key JD line, quoting the JD verbatim (\"Own a product area: define the roadmap, write PRDs, and prioritize the backlog.\") against specific evidence (\"Owned an operational program roadmap; has prioritized issue lists. Has NEVER written a PRD...\").",
+      "reason": "All required JD lines plus nice-to-haves are reverse-mapped, each quoting the JD and citing concrete evidence from the persona. Full coverage."
+    },
+    {
+      "id": "F2",
+      "score": 5,
+      "evidence": "strong/stakeholder mgmt, strong/cross-functional ownership, partial/SQL, GAP/own-a-product-area, GAP/ship-with-eng-and-designers, GAP/discovery+PRDs+agile.",
+      "reason": "Every label agrees with the expectations answer key. The three must-be-GAP lines (product area/PRDs/backlog, daily eng+design shipping, discovery/PRDs/agile) are all correctly labeled GAP. No mislabeling."
+    },
+    {
+      "id": "F3",
+      "score": 5,
+      "evidence": "\"I owned the 14-clinic onboarding program -> the textbook move is to standardize before scaling -> I deliberately ran three maximally-different sites manually first to discover what was truly common, then froze the playbook, which is why it held up across all 14 and cut onboarding 11->7 weeks.\"",
+      "reason": "Meta-move present for each strong line in the what-you-did -> SOTA -> trade-off shape; concrete and specific, not a restated bullet. Numbers all trace to persona."
+    },
+    {
+      "id": "F4",
+      "score": 5,
+      "evidence": "GAP map flags 🔴 PRD writing, 🔴 product backlog/roadmap, 🔴 product-sense, 🔴 success metrics + product analytics, 🟠 shipping with eng/designers, 🟠 discovery/agile, 🟡 SQL depth; each mapped to a JD line and an interview round.",
+      "reason": "Captures the dominant core-PM-craft gap and the product-analytics gap from expectations. Prioritized sensibly by JD weight x weakness with explicit cost-to-close columns. Heart-of-the-tool quality."
+    },
+    {
+      "id": "F5",
+      "score": 5,
+      "evidence": "\"This is a genuine career switch, not a sharpening of known skills... What is learning-from-scratch (true gaps): the PM craft itself... The strategy is not to fake PM reps.\"",
+      "reason": "Matches the expected learning-from-scratch verdict exactly, names it plainly with an in-room line, and explicitly refuses to fake PM reps. Zero false optimism, zero rubber-stamping."
+    }
+  ],
+  "mean": 5.0,
+  "min": 5,
+  "red_flags": [],
+  "pass": true,
+  "highest_leverage_fix": ""
+}

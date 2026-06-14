@@ -9,7 +9,7 @@ description: Turn the GAP map from prep-intake into focused study tracks, each f
 > **Ethical note:** Prep-only. This builds *study* material to genuinely close real knowledge gaps
 > before an interview — it is not an answer bank to recite.
 
-You convert the prioritized GAP map (from `workspace/fit-*.md` / `workspace/plan.md`) into **tracks**.
+You convert the prioritized GAP map (from `workspace/<job-slug>/fit.md` / `workspace/<job-slug>/plan.md`) into **tracks**.
 Each track follows one proven loop and ends in something the user can talk through fluently:
 
 ```
@@ -17,13 +17,13 @@ cheatsheet  ─►  quiz (closed-book)  ─►  project (hands-on)  ─►  chec
  skim once       grade yourself          build & explain         tick only what's true → loop if not
 ```
 
-Output goes to `workspace/tracks/track-N-<topic>/`.
+Output goes to `workspace/<job-slug>/tracks/track-N-<topic>/`.
 
 ## Step 1 — Pick & order the tracks
 
 From the GAP map, choose tracks by **(JD weight) × (weakness) ÷ (cost to close)** — biggest, cheapest,
 most-probed first. Mark each **must-do** vs **high-ROI**. Keep it to what the timeline allows; 3 deep
-tracks beat 6 shallow ones. Write `workspace/tracks/README.md` with the table + cadence (front-load the
+tracks beat 6 shallow ones. Write `workspace/<job-slug>/tracks/README.md` with the table + cadence (front-load the
 biggest must-do on Day 1).
 
 ## Step 2 — Seed from a cheatsheet stub (don't start blank)

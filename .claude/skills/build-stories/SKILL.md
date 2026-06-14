@@ -22,7 +22,7 @@ quantified result. Reject vague answers and dig for the specific.
 
 ## Step 1 — Anchor to the JD + archetypes
 
-Read `workspace/profile.md` and the relevant `workspace/fit-*.md`. Build a coverage matrix: which
+Read `workspace/profile.md` and the relevant `workspace/<job-slug>/fit.md`. Build a coverage matrix: which
 **archetypes** does this role probe, and which real experiences can cover each?
 
 Default behavioral archetypes (each maps to common questions):

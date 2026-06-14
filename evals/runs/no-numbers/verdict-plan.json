@@ -1,0 +1,41 @@
+{
+  "artifact": "plan",
+  "persona": "no-numbers",
+  "criteria": [
+    {
+      "id": "L1",
+      "score": 5,
+      "evidence": "Days until interview: **10** ... Rounds: **recruiter screen (30m) → technical screen (60m...) → onsite (coding + system design + behavioral)**",
+      "reason": "Timeline and full round structure captured under Constraints and actively used to drive the day-by-day cadence."
+    },
+    {
+      "id": "L2",
+      "score": 5,
+      "evidence": "Day 2/3 build-stories ... Day 5 SQL track (technical screen has live coding) ... Day 7 system-design track ... Day 8 mock technical screen",
+      "reason": "Sequencing matches the JD's recruiter→technical→onsite shape; next-round material (stories, past-work, coding/SQL) is front-loaded and onsite-only system design is correctly deferred to Day 7."
+    },
+    {
+      "id": "L3",
+      "score": 5,
+      "evidence": "Priority queue table with columns Action / Skill to run / Maps to, e.g. 'Close the backend/API depth gap | build-curriculum (backend + SQL tracks) | technical screen + onsite coding'",
+      "reason": "Every action names a concrete skill and the round/gap it serves; the gap→skill→round mapping is explicit."
+    },
+    {
+      "id": "L4",
+      "score": 5,
+      "evidence": "'Done' looks like: You can state a **real number** ... or you have a crisp, honest 'I'd want to confirm the exact figure...' with the dig already attempted. **No invented metrics, ever.**",
+      "reason": "Concrete, honest readiness bar tied to this persona's actual risk (missing numbers), not platitudes; includes the anti-fabrication stance."
+    },
+    {
+      "id": "L5",
+      "score": 5,
+      "evidence": "#1 Gather real numbers ... never invent ... ✅ ; 'System design fundamentals for the onsite (the only real learn-from-scratch track)'",
+      "reason": "No mis-prioritization: the top must-do is collecting real metrics (the exact expectation for no-numbers), and fresh study is correctly limited to onsite system design rather than over-prepping any single round."
+    }
+  ],
+  "mean": 5.0,
+  "min": 5,
+  "red_flags": [],
+  "pass": true,
+  "highest_leverage_fix": ""
+}

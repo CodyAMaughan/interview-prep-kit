@@ -23,24 +23,34 @@ INTAKE  ─►  PROFILE + FIT  ─►  PLAN  ─►  hand off to:
 ## Step 0 — Create the private workspace
 
 All personal output goes in a **gitignored** workspace so the user can never commit their resume/JD.
+Candidate-level files (who you are) live at the **base**; **each target job gets its own subfolder** so
+multiple jobs stay organized side by side under one base folder.
 
 1. Default to `workspace/` in the current repo (already in this plugin's `.gitignore`). If the user is
    running this inside their *own* separate prep repo, use `prep/` there instead — confirm which.
-2. Create the workspace skeleton:
+2. Pick a short, kebab-case **job slug** for this role — the company, plus the role if prepping more than
+   one role at the same company (e.g. `lumen-robotics` or `lumen-platform-eng`).
+3. Create the workspace skeleton:
    ```
    workspace/
-     inputs/         # raw pasted context: resume.md, jd-<company>.md, links.md, extra/
-     profile.md      # synthesized candidate profile
-     fit-<company>.md# experience↔JD map + gaps, one per role
-     plan.md         # the prioritized, timeline-aware plan
+     inputs/resume.md      # shared candidate input(s): resume, links.md, extra/
+     profile.md            # shared: synthesized candidate profile (who you are)
+     stories.md            # shared: reusable STAR story bank (build-stories)
+     decision-matrix.md    # shared: multi-offer comparison (decide), if used
+     <job-slug>/           # ONE per target job — everything role-specific:
+       jd.md               #   the job description
+       fit.md              #   experience↔JD map + GAP map
+       plan.md             #   the prioritized, timeline-aware plan
+       research/ tracks/ cheatsheets/   # filled by the other skills, per job
    ```
-3. Tell the user: *"Everything here is private and gitignored. Nothing personal goes in the shared
+4. Tell the user: *"Everything here is private and gitignored. Nothing personal goes in the shared
    repo."* If `workspace/` is somehow not gitignored, STOP and fix `.gitignore` first.
 
 ## Step 1 — INTAKE (gather everything)
 
-Ask for inputs one source at a time; accept whatever the user has and move on. Save each raw input
-under `workspace/inputs/` so later skills can re-read it.
+Ask for inputs one source at a time; accept whatever the user has and move on. Save shared inputs
+(resume, links, extra) under `workspace/inputs/`, and each job's JD under its own
+`workspace/<job-slug>/jd.md`, so later skills can re-read them.
 
 Sources to request (all optional except a JD and *some* experience signal):
 - **Resume / CV** — ask them to paste text or drop a file path. (A PDF is fine — read it; just never
@@ -50,8 +60,8 @@ Sources to request (all optional except a JD and *some* experience signal):
   then paste the text or give a file path. Don't burn turns retrying a blocked URL.
 - **GitHub** — username or repo URLs; pull languages, notable repos, READMEs (public, fetchable).
 - **Personal site / portfolio / blog** — fetch and summarize.
-- **Job description(s)** — one or more. Save each as `inputs/jd-<company>.md`. Multiple JDs are fine
-  (they drive the optional `decide` step later).
+- **Job description(s)** — one or more. Give each its own job slug and save it as
+  `<job-slug>/jd.md`. Multiple JDs each get their own subfolder (they drive the optional `decide` step later).
 - **Arbitrary added context** — recruiter emails, take-home prompts, Glassdoor notes, pasted docs,
   extra URLs. Accept all of it; file under `inputs/extra/`.
 
@@ -60,7 +70,7 @@ Sources to request (all optional except a JD and *some* experience signal):
 
 ## Step 2 — PROFILE (synthesize who they are)
 
-From the inputs, write `workspace/profile.md`. Be concrete and evidence-based — pull real numbers,
+From the inputs, write `workspace/profile.md` (shared across all jobs). Be concrete and evidence-based — pull real numbers,
 systems, and scope from their materials. Schema:
 
 ```markdown
@@ -89,7 +99,7 @@ questions* and ask. The integrity of every downstream story depends on this.
 
 ## Step 3 — FIT (map experience ↔ JD, find the gaps)
 
-For **each** JD, write `workspace/fit-<company>.md`:
+For **each** JD, write `workspace/<job-slug>/fit.md`:
 
 ```markdown
 # Fit — <Company> / <Role>
@@ -120,7 +130,7 @@ close)** — biggest, cheapest, most-probed gaps first.
 
 Ask two things if not already known: **how many days until the interview**, and **the round
 structure** (recruiter screen? technical? hiring manager? onsite/panel?). Then write
-`workspace/plan.md`:
+`workspace/<job-slug>/plan.md`:
 
 ```markdown
 # Prep Plan — <Company>
@@ -161,7 +171,7 @@ non-technical screen.
    ```
 
 ## Done criteria for this skill
-- `workspace/` exists and is gitignored; raw inputs saved under `inputs/`.
-- `profile.md` is evidence-based with zero fabricated claims; open questions surfaced, not guessed.
-- A `fit-<company>.md` per JD with a JD reverse-map + a prioritized GAP map.
-- `plan.md` is timeline- and round-aware with a brutal "done" bar.
+- `workspace/` exists and is gitignored; shared inputs saved under `inputs/`, each JD under `<job-slug>/jd.md`.
+- `profile.md` (base, shared) is evidence-based with zero fabricated claims; open questions surfaced, not guessed.
+- A `<job-slug>/fit.md` per JD with a JD reverse-map + a prioritized GAP map.
+- `<job-slug>/plan.md` is timeline- and round-aware with a brutal "done" bar.

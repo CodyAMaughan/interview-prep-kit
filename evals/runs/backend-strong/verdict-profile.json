@@ -1,0 +1,41 @@
+{
+  "artifact": "profile",
+  "persona": "backend-strong",
+  "criteria": [
+    {
+      "id": "P1",
+      "score": 5,
+      "evidence": "Senior backend engineer, 8 years, focused on high-throughput payments infrastructure — strongest signal is owning a double-entry ledger at ~9M transactions/day with measurable latency, reliability, and correctness wins.",
+      "reason": "One sentence; names ~8 yrs + backend/payments domain + the real strongest signal (ledger / correctness at scale). Exactly matches the expectation and traces to persona lines 6, 16."
+    },
+    {
+      "id": "P2",
+      "score": 5,
+      "evidence": "Evidence table captures 9M txns/day, p99 410→95ms, Sev2s 6/quarter→0, double-charges ~120/mo→<5/mo, gateway CPU ~35%, MTTR ~90→~25 min, 30+ internal services.",
+      "reason": "Every load-bearing number from the expectations file is present and correct. Nothing major dropped; even the secondary roles (Brightwater, Orchard) are inventoried with their real scope."
+    },
+    {
+      "id": "P3",
+      "score": 5,
+      "evidence": "Correctness-critical payments systems — backed by the ledger, idempotency, and reconciliation work at Cascade Pay (double-charges 120/mo → <5/mo). ... Setting technical direction with buy-in — backed by the ledger redesign design doc + load test that won over two staff engineers.",
+      "reason": "Every strength cites a specific experience with a number or concrete artifact. No free-floating adjectives (no 'great engineer'). Each strength maps to a JD requirement."
+    },
+    {
+      "id": "P4",
+      "score": 5,
+      "evidence": "Open questions: Mentorship: 4 engineers mentored is stated, but there is no quantified outcome — confirm... Orchard Labs billing webhook pipeline: no metric attached... which language(s) are interview-ready for live coding...",
+      "reason": "Open questions are minor and genuine — they target the two genuinely unquantified items (mentorship, webhook) and ask which language is coding-ready rather than inventing facts. It did NOT manufacture missing info where the rich résumé has it. Matches expectation that open questions should be minor."
+    },
+    {
+      "id": "P5",
+      "score": 5,
+      "evidence": "All metrics (9M tx/day, 410→95ms, 6→0 Sev2s, 120→<5/mo, 35% CPU, 90→25 min, 30+ services, 4 engineers, 3 yrs K8s) cross-checked against persona lines 6,16,19,21,22,25,26,27,33,46. The two unquantified rows are explicitly flagged ⚠️ needs a number rather than invented.",
+      "reason": "Zero fabrication. Every number traces to the persona. Where the persona has no number (mentorship outcome, billing webhook impact), the artifact correctly marks ⚠️ instead of inventing one — model honest behavior."
+    }
+  ],
+  "mean": 5.0,
+  "min": 5,
+  "red_flags": [],
+  "pass": true,
+  "highest_leverage_fix": ""
+}

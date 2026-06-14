@@ -1,0 +1,41 @@
+{
+  "artifact": "fit",
+  "persona": "backend-strong",
+  "criteria": [
+    {
+      "id": "F1",
+      "score": 5,
+      "evidence": "Reverse-map table quotes every JD line verbatim ('Design, build, and operate high-throughput, low-latency backend services...', '5+ years building backend services in production', all three nice-to-haves) and cites concrete evidence for each.",
+      "reason": "Comprehensive coverage: all Required and all Nice-to-have JD lines mapped, each quoting the JD and citing a specific, real experience. Nothing load-bearing dropped."
+    },
+    {
+      "id": "F2",
+      "score": 5,
+      "evidence": "Postgres/data-modeling = strong, distributed-systems = strong (with honest 'idempotency proven; partitioning/replication/consensus mostly stated'), K8s = 'strong (confirm depth)', payments/ledgering = strong, idempotency/reconciliation/exactly-once = strong.",
+      "reason": "Every label matches the expectations answer key. K8s read as strong (not invented as a gap), distributed-systems strong-with-nuance — exactly the calibration the answer key demands. No mislabel."
+    },
+    {
+      "id": "F3",
+      "score": 5,
+      "evidence": "'I built idempotency keyed on the source-event UUID + a reconciliation layer -> the naive approach keys on request/client-supplied IDs and trusts the happy path -> I designed for the retry storm after one collided and double-charged ~300 customers, taking double-charges 120/mo -> <5/mo.'",
+      "reason": "Meta-moves follow the what-I-did -> SOTA -> trade-off shape concretely for all four strong lines; they are genuine trade-off narratives, not restated bullets."
+    },
+    {
+      "id": "F4",
+      "score": 4,
+      "evidence": "GAP map: system-design fluency for the onsite (med, 🔴); partitioning/replication/consensus depth (med, 🟠); live coding readiness (low, 🟠); mentorship story with a number (low, 🟡).",
+      "reason": "Gaps are real, mapped to JD lines, and short. Prioritization is sensible (high-weight onsite system-design first). Minor slack: labeling system-design *rehearsal* as 🔴 leans slightly hot for an otherwise strong candidate where the answer key prefers stretches framed as talking points — but it is a genuine onsite stage and the honest-framing section recasts it as packaging, not a knowledge deficit. Did NOT invent a K8s/distributed-systems knowledge gap."
+    },
+    {
+      "id": "F5",
+      "score": 5,
+      "evidence": "'This is overwhelmingly a resurfacing-and-sharpening profile, not learning-from-scratch... The genuine prep is not closing knowledge gaps; it's packaging.'",
+      "reason": "Matches the expected verdict exactly (resurfacing/sharpening), named plainly, no rubber-stamping. Specific about what 'packaging' means rather than generic positivity."
+    }
+  ],
+  "mean": 4.8,
+  "min": 4,
+  "red_flags": [],
+  "pass": true,
+  "highest_leverage_fix": ""
+}

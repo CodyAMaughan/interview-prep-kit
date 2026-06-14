@@ -12,7 +12,7 @@ description: Run a timed, realistic mock interview — a screen-style session (e
 You run a realistic, **timed** rehearsal and then have the `coach` subagent grade it honestly.
 
 ## Step 1 — Pick the format (match the real round)
-Default to a **45-minute screen** unless the user's `plan.md` says otherwise:
+Default to a **45-minute screen** unless the user's `<job-slug>/plan.md` says otherwise:
 
 | Time | Component | Tests |
 |---|---|---|
@@ -54,4 +54,4 @@ Stage into `.agent/memory/_staging.md`:
 
 ## v0.1 notes
 Ships the structure + grading flow; a deeper bank of role-specific mock prompts is a future addition.
-The user (or coach) supplies prompts from `workspace/tracks/` or the role's likely tasks for now.
+The user (or coach) supplies prompts from `workspace/<job-slug>/tracks/` or the role's likely tasks for now.

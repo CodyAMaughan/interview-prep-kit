@@ -1,0 +1,41 @@
+{
+  "artifact": "plan",
+  "persona": "ops-to-pm",
+  "criteria": [
+    {
+      "id": "L1",
+      "score": 5,
+      "evidence": "Constraints: Days until interview: 10; Rounds: recruiter screen (30m) -> hiring-manager screen (45m: background + product-sense) -> onsite (virtual): product-sense case / analytical/metrics case / execution case / behavioral",
+      "reason": "Timeline (10 days) and full round structure captured verbatim from the JD and actually used to drive the day-by-day cadence (Day 1..Day 10/Morning-of)."
+    },
+    {
+      "id": "L2",
+      "score": 5,
+      "evidence": "Row 1 build-stories maps to 'recruiter + HM screen + behavioral onsite'; Row 3 build-curriculum maps to 'HM product-sense + all 3 onsite cases'; cadence front-loads stories+honest framing (Day 1) and research (Day 2) before deeper PM-craft.",
+      "reason": "Sequencing matches the JD's actual round shape: the near-term recruiter/HM screens (stories + honest switch framing + research) are front-loaded, and onsite-case prep is staged later. Round-aware as required."
+    },
+    {
+      "id": "L3",
+      "score": 5,
+      "evidence": "Priority queue table columns 'Action | Skill to run | Maps to | Must-do?', e.g. 'Close PM-craft gaps... | build-curriculum | HM product-sense + all 3 onsite cases | check'.",
+      "reason": "Every action names a concrete skill and the specific round/gap it serves; the dominant PM-craft gap is correctly routed to build-curriculum as a must-do (matches the expectations watch-item)."
+    },
+    {
+      "id": "L4",
+      "score": 5,
+      "evidence": "'Done looks like' includes: 'She delivers the honest career-switch framing in one breath without apologizing, then pivots to transferable evidence' and 'She can run a basic product-sense pass (user -> problem -> prioritized solution -> success metric) on a healthcare-workflow problem unprompted.'",
+      "reason": "Concrete, behavior-anchored readiness bar tied to real numbers and the honest-switch narrative; not platitudes."
+    },
+    {
+      "id": "L5",
+      "score": 5,
+      "evidence": "Row 6 'analytical/metrics case + light SQL drill'; Day 7 'SQL beyond simple SELECTs (GROUP BY, joins)'; build-curriculum for PM fundamentals is the central must-do.",
+      "reason": "No mis-prioritization: SQL is kept light (the JD lists it as 'a plus'), no coding grind is prescribed, and prep weight goes to PM craft and product-sense, which is the real gap. No rubber-stamping of readiness."
+    }
+  ],
+  "mean": 5.0,
+  "min": 5,
+  "red_flags": [],
+  "pass": true,
+  "highest_leverage_fix": ""
+}

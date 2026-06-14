@@ -1,0 +1,17 @@
+{
+  "artifact": "stories",
+  "persona": "growth-pm",
+  "criteria": [
+    {"id": "S1", "score": 5, "evidence": "Story 1 has S/T/A/R/L with three distinct actions: 'I designed a 4-arm test... I pre-defined D7 retention as the success metric and instrumented it. Then I made the call to ship...'", "reason": "Every one of the 5 stories has all five STAR+L fields, each Action decomposed into three concrete decisions."},
+    {"id": "S2", "score": 5, "evidence": "'I designed a 4-arm test', 'I made the call to ship', 'I built an LTV model', 'I rebuilt the referral readout'", "reason": "Consistent individual ownership in first person; the lone 'We killed it' (Story 2) is preceded by clearly owned 'I ran a holdout'."},
+    {"id": "S3", "score": 5, "evidence": "Real: '22% to 28%', 'dropped activation 6%', '~$1.5M'. Flagged: 'Activated-invitees lift needs a number', Story 4 'no number — this is a self-awareness story'.", "reason": "Every number traces to the persona (22-28, 6%, 15%, 1.5M, 4-arm, 6yrs verified). Unquantified results are explicitly flagged, never invented. Story 3 even avoids leading with the 15% vanity metric it argues against."},
+    {"id": "S4", "score": 5, "evidence": "'Pre-commit to the metric before you see the results, then have the spine to ship the winner over the favorite.'", "reason": "Every story ends with a generalizable one-sentence lesson."},
+    {"id": "S5", "score": 5, "evidence": "'JD -> story map' table mapping 8 question types to primary/backup stories; 'Strengthen before the room: tighten to 90s'.", "reason": "5 stories with deliberate reuse mapped across the role's archetypes; constraint surfaced and coached. Minor density but self-flagged."},
+    {"id": "S6", "score": 5, "evidence": "Story 1 (onboarding 4-arm/ambiguous bet), Story 2 (mandatory-tutorial holdout/judgment), Story 3 (invites->activated-invitees/disagreeing-up); coverage check surfaces missing peer-conflict as an open ask.", "reason": "All three expected archetypes covered plus honest-gap and impact; missing people-mgmt/peer-conflict honestly flagged rather than fabricated."}
+  ],
+  "mean": 5.0,
+  "min": 5,
+  "red_flags": [],
+  "pass": true,
+  "highest_leverage_fix": "None required — passing. Optional polish: build-stories could trim the densest stories (1, 3) to verifiably hit the 90s bar rather than only flagging it."
+}

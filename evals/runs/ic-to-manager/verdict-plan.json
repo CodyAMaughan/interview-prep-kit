@@ -1,0 +1,41 @@
+{
+  "artifact": "plan",
+  "persona": "ic-to-manager",
+  "criteria": [
+    {
+      "id": "L1",
+      "score": 5,
+      "evidence": "Constraints: Days until interview: 10; Rounds: recruiter screen (30m) → hiring-manager screen (45m...) → onsite (virtual): people-management case · cross-functional/conflict scenario · technical-direction/design discussion · values interview.",
+      "reason": "Timeline (10 days) and the full round structure are captured verbatim from the JD and actively used to drive the day-by-day cadence."
+    },
+    {
+      "id": "L2",
+      "score": 5,
+      "evidence": "**This loop is leadership-weighted, NOT a coding gauntlet.** Do not over-invest in algorithm/coding drills. Front-load behavioral stories, management philosophy, and the people/conflict cases.",
+      "reason": "Sequencing front-loads the next round (HM screen: stories + philosophy on Days 1-2) and mirrors the JD's leadership-weighted onsite shape exactly. The headline round-awareness test is met."
+    },
+    {
+      "id": "L3",
+      "score": 5,
+      "evidence": "Priority queue table with columns Action / Skill to run / Maps to, e.g. 'Close the performance-management gap... | build-curriculum | onsite people-management case'.",
+      "reason": "Every queue item names a concrete skill and the specific round/gap it serves; gaps (perf mgmt, hiring) map cleanly to skills and rounds."
+    },
+    {
+      "id": "L4",
+      "score": 5,
+      "evidence": "'Done' looks like: Deliver all 5–7 stories cold, each in ≤90s, each landing on a concrete decision + a real number (18→6 min, ~40% incidents, 2 promoted to senior). State a coherent management philosophy in ≤60s... Name the formal-management gap in one honest sentence and immediately pivot.",
+      "reason": "Concrete, testable readiness bars with timeboxes and named-framework requirements, not platitudes."
+    },
+    {
+      "id": "L5",
+      "score": 5,
+      "evidence": "Do not over-invest in algorithm/coding drills... Action #3 'Close the performance-management gap', #4 'Close the hiring-as-hiring-manager gap'.",
+      "reason": "No coding/LeetCode grind is prescribed; effort goes to the real leadership/people-management/hiring gaps. Technical-direction round is rightly given light weight given her over-qualification. No mis-prioritization."
+    }
+  ],
+  "mean": 5.0,
+  "min": 5,
+  "red_flags": [],
+  "pass": true,
+  "highest_leverage_fix": ""
+}

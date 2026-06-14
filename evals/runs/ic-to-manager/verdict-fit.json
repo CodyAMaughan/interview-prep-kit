@@ -1,0 +1,41 @@
+{
+  "artifact": "fit",
+  "persona": "ic-to-manager",
+  "criteria": [
+    {
+      "id": "F1",
+      "score": 5,
+      "evidence": "The reverse-map quotes every key JD line verbatim ('Manage and grow a team of 5–7 engineers: coaching, career development, performance, and hiring.', 'Set and uphold technical direction with your senior engineers (without being the primary IC).', plus required + nice-to-have lines) and cites concrete evidence for each.",
+      "reason": "Comprehensive coverage: all required lines and all three nice-to-haves are mapped, each quoting the JD and citing specific persona evidence. Exceeds the anchor."
+    },
+    {
+      "id": "F2",
+      "score": 5,
+      "evidence": "'Manage and grow a team ... performance, and hiring.' → 'partial' with 'no formal performance reviews or hiring as hiring manager'; '(Nice to have) Prior formal people-management experience (direct reports, reviews, hiring as hiring manager).' → '**GAP**'; 'leading engineering work and growing engineers — formally or as a tech lead stepping up.' → 'strong'.",
+      "reason": "Labels match the expectations answer key exactly: the leading/growing line is strong, technical foundation strong, delivering-through-a-team strong, the coaching/performance/hiring line is partial, and formal people-management is GAP. The critical watch-item (formal people-management must be partial/GAP, never strong) is satisfied."
+    },
+    {
+      "id": "F3",
+      "score": 4,
+      "evidence": "Meta-moves follow the 'what you did → SOTA → trade-off' shape: 'I set direction by running a design spike week → the standard move is for the lead to pick the architecture and assign it → I chose to let all six engineers prototype first, then converge together, because durable alignment beats a faster top-down decision.'",
+      "reason": "Three concrete, non-restated meta-moves with genuine trade-off reasoning. Minor slack: only three of the several strong lines get a meta-move (e.g. 'leading engineering work and growing engineers' and 'people-first leadership' strong lines have none), but the ones present are high quality."
+    },
+    {
+      "id": "F4",
+      "score": 5,
+      "evidence": "GAP map lists 'No formal performance-management experience' (🔴), 'No hiring as hiring manager' (🔴), 'Crossing from influence-authority to positional-authority' (🟠), 'Cross-functional partnering' (🟠), 'Headcount / budget ownership' (🟡), each mapped to a JD line and assigned a cost-to-close and priority.",
+      "reason": "The must-find gaps from expectations (formal performance management, hiring as hiring manager, headcount/budget) are all present and correctly prioritized highest. Each gap quotes the JD line it serves; the formal-management instruments are flagged 🔴 as the real step-up. Notably it does NOT invent a coding/technical gap (correct — she is over-qualified technically)."
+    },
+    {
+      "id": "F5",
+      "score": 5,
+      "evidence": "'This is mostly **resurfacing and reframing**, not learning from scratch. ... The genuine net-new is **positional authority and its formal instruments**: performance reviews, hiring as the manager of record, and headcount/budget. ... Lead with the strong, name the gap once, plainly.'",
+      "reason": "Matches the expected verdict exactly: resurfacing leadership she's already done informally + learning the formal-management craft, with the manager-of-record gap named explicitly and not rubber-stamped. No false positivity."
+    }
+  ],
+  "mean": 4.8,
+  "min": 4,
+  "red_flags": [],
+  "pass": true,
+  "highest_leverage_fix": ""
+}

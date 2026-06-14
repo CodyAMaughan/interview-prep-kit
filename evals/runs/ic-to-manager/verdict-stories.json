@@ -1,0 +1,17 @@
+{
+  "artifact": "stories",
+  "persona": "ic-to-manager",
+  "criteria": [
+    {"id": "S1", "score": 5, "evidence": "Story 1 has S/T/A/R/L with three distinct actions: 'I ran a design spike week ... Then I let everyone prototype ... Then we converged and picked one direction together.'", "reason": "All 5 stories carry complete S/T/A/R/L; each Action contains three concrete, distinct decisions rather than vague activity."},
+    {"id": "S2", "score": 5, "evidence": "'I owned a CI/CD platform rewrite', 'I brought the incident data', 'I sat them down and made each argue the other's position'", "reason": "Individual ownership is consistent throughout; the few 'we' uses ('we picked one direction together') are the deliberate point of the leadership story, not ownership-blurring."},
+    {"id": "S3", "score": 5, "evidence": "Real: 'Median build time dropped from 18 min to 6 min across 200+ services' and 'Platform-caused incidents dropped ~40%'. Flagged: 'The standoff resolved ... ⚠️ needs a number (no quantified time-saved/delay figure in the persona).'", "reason": "Every real number traces to the persona (18->6 min, ~40%, 6 engineers, 2 lent, painful month, 2 mentees promoted). The three unquantified stories are explicitly ⚠️-flagged with guidance to stay honest rather than invent. Zero fabrication."},
+    {"id": "S4", "score": 5, "evidence": "'Disagreeing up works when you argue with data and bring an option, not just an objection.' / 'Delegating is part of leading, not a nice-to-have ...'", "reason": "Every story ends with one generalizable, punchy lesson sentence."},
+    {"id": "S5", "score": 5, "evidence": "JD->story map with ⭐ primaries and Backup column; each story carries 'tighten to 90s' under Strengthen before the room.", "reason": "Tight stories, explicit timing reminders, and a reuse map covering the role's likely questions with primary/backup assignment."},
+    {"id": "S6", "score": 5, "evidence": "Coverage check: 'Disagreeing up: Story 2 ... Failure-with-recovery: Story 4 ... Conflict/coaching/career development: Story 3'", "reason": "All four expected archetypes (leadership/direction, disagreeing-up, conflict/coaching, failure-with-recovery/delegation) are covered, plus a reliability-program leadership story; coverage table makes mapping explicit."}
+  ],
+  "mean": 5.0,
+  "min": 5,
+  "red_flags": [],
+  "pass": true,
+  "highest_leverage_fix": "None required — artifact passes. Optional polish: promote the '2 mentees promoted to senior' detail (already flagged in Open questions) into a standalone career-development STAR, since the values/career-development onsite round may probe growing-someone-to-promotion directly."
+}

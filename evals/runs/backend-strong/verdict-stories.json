@@ -1,0 +1,17 @@
+{
+  "artifact": "stories",
+  "persona": "backend-strong",
+  "criteria": [
+    {"id": "S1", "score": 5, "evidence": "Story 1 has S/T/A/R/L with three distinct actions: 'I wrote a one-page design doc and ran a load test... Then I got buy-in from the two staff engineers... Then I migrated incrementally behind a feature flag over 6 weeks.'", "reason": "All six stories carry full S/T/A/R/L; each Action contains three discrete decisions, not activities. STAR is complete and well-structured across the bank."},
+    {"id": "S2", "score": 5, "evidence": "'I owned the redesign call and had to win buy-in' (S1); 'It was my design, so owning both the live incident and the durable fix was on me' (S2). The persona's 'We migrated' became 'I migrated incrementally behind a feature flag.'", "reason": "Individual ownership is consistent and explicit throughout; first-person decisions are clear and the lone 'we' from the source was correctly converted to 'I'."},
+    {"id": "S3", "score": 5, "evidence": "Real numbers trace to persona (410->95ms, 6/quarter->0, ~300 customers/20 min, 120/mo-><5/mo, ~35% CPU, 90->25 min MTTR). Story 6 Result: 'needs a number - no quantified outcome in the persona... Confirm a concrete result with the candidate.'", "reason": "Every number is verifiable against the persona - zero fabrication. The single story lacking a metric (mentorship) is honestly flagged rather than invented, which is exactly the correct eval-first behavior."},
+    {"id": "S4", "score": 5, "evidence": "'Win an architectural argument with a load test, not an opinion' (S1); 'Design for the retry storm, not the happy path' (S2); 'Disagree up by reframing the trade-off in the leader's currency - cost and trust' (S3).", "reason": "Each story ends with one generalizable, memorable lesson - the punchline is never skipped."},
+    {"id": "S5", "score": 5, "evidence": "JD->story map with Primary + Backup columns; headliners marked; per-story 'Strengthen before the room: tighten to 90s' / 'keep it ~75s' guidance. Six stories total.", "reason": "5-7 stories, deliberate reuse documented in the map, and explicit timing discipline. Tight and spoken-prep oriented."},
+    {"id": "S6", "score": 5, "evidence": "Story 1 (per-service DB migration / leadership+trade-off), Story 2 (double-charge failure-with-recovery), Story 3 (disagreeing up on reconciliation), Story 4 (trie vs regex bet) - all four expected archetypes present, plus on-call and mentoring bonuses.", "reason": "Covers every expected archetype from the expectations file and maps each to the JD's likely questions; no expected archetype missing."}
+  ],
+  "mean": 5.0,
+  "min": 5,
+  "red_flags": [],
+  "pass": true,
+  "highest_leverage_fix": "None required - artifact passes cleanly. Every number traces to the persona, all four expected archetypes are covered with full STAR + lesson + meta-move, individual ownership is consistent, and the one story without a persona metric is honestly flagged instead of fabricated."
+}

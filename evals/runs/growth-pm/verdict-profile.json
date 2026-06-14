@@ -1,0 +1,41 @@
+{
+  "artifact": "profile",
+  "persona": "growth-pm",
+  "criteria": [
+    {
+      "id": "P1",
+      "score": 4,
+      "evidence": "Growth analyst, 6 years embedded with consumer-app product teams — strongest signal is a rigorous, high-velocity experimentation practice (~60 experiments/year) that has driven real funnel impact.",
+      "reason": "Years + domain + true strongest signal (experimentation) all present and accurate. Minor slack: the headline itself omits the 'moving into PM / partial on full product ownership' nuance the expectations call for, though the Themes section captures it cleanly."
+    },
+    {
+      "id": "P2",
+      "score": 5,
+      "evidence": "~60 experiments/year ... D7 retention 22% → 28% ... LTV model reallocated ~$1.5M of spend ... 15% lift in invites sent ... trained 8 PMs/analysts ... Scoped + shipped 3 growth features end to end",
+      "reason": "Captures every load-bearing experience with its real number; matches the expected evidence inventory almost item-for-item. Nothing major dropped."
+    },
+    {
+      "id": "P3",
+      "score": 5,
+      "evidence": "Driving measurable funnel impact — backed by D7 retention 22% → 28% and the $1.5M LTV-driven reallocation. ... Ship/no-ship judgment from data — owned the success metric and ship call on the onboarding redesign; killed a mandatory-tutorial idea via holdout (−6% activation).",
+      "reason": "Every strength cites a specific experience and number. No free-floating adjectives; the experimentation strength is credited accurately and the data-driven ship-call judgment is grounded."
+    },
+    {
+      "id": "P4",
+      "score": 5,
+      "evidence": "Have they ever written anything resembling a full PRD or run a quarterly planning cycle, even partially? (The gap they name; worth confirming the exact edge of what they've done.)",
+      "reason": "Open questions are genuine and specific: missing per-feature lift numbers, activated-invitees metric, training outcomes, team size, and the precise edge of full-PM/PRD/roadmap experience — exactly the honest partial-framing nuance the expectations require. Nothing is guessed."
+    },
+    {
+      "id": "P5",
+      "score": 5,
+      "evidence": "3 features shipped (per-feature lift ⚠️ needs a number)",
+      "reason": "Cross-checked every number (6 yrs, ~60 exp/yr, 22→28%, $1.5M, +15%, trained 8, −6% holdout, 3 features) against the persona — all trace exactly. The one missing metric is correctly ⚠️-flagged rather than fabricated. Zero invented numbers."
+    }
+  ],
+  "mean": 4.8,
+  "min": 4,
+  "red_flags": [],
+  "pass": true,
+  "highest_leverage_fix": "None required — artifact passes. Optional nicety: prompt the headline to fold in the candidate's stated career transition (e.g. 'moving into PM') when the persona explicitly names it, so the partial-framing nuance lives in the one-line summary as well as the Themes section."
+}

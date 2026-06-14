@@ -9,16 +9,16 @@ description: Generate dense one-page references and a "morning-of" glance sheet 
 > **Ethical note:** Prep-only. A glance sheet you review *before* you walk in — not something to read
 > *during* the interview.
 
-You distill the workspace into dense, glanceable references. Output to `workspace/cheatsheets/`.
+You distill the workspace into dense, glanceable references. Output to `workspace/<job-slug>/cheatsheets/`.
 
 ## Output 1 — Domain one-pagers
 For each track or topic the user wants on one page, compress its `cheatsheet.md` to the **20% that's
 80% of the interview**: the formulas/patterns/vocabulary they'd want to have skimmed an hour before.
-Keep it to a single screen. Save as `workspace/cheatsheets/<topic>.md`.
+Keep it to a single screen. Save as `workspace/<job-slug>/cheatsheets/<topic>.md`.
 
 ## Output 2 — Morning-of glance sheet (the flagship)
 One page per round, to glance at ~10 minutes before. Save as
-`workspace/cheatsheets/morning-of-<round>.md`:
+`workspace/<job-slug>/cheatsheets/morning-of-<round>.md`:
 
 ```markdown
 # Morning-of — <Company> / <round>
@@ -47,7 +47,7 @@ One page per round, to glance at ~10 minutes before. Save as
 
 ## Output 3 — Namedrop lines (experience → their problem)
 Ready-to-say lines that map the user's **real** work onto the role's problem, each with a one-line
-"why it lands". Drop naturally, don't recite. Save as `workspace/cheatsheets/namedrop.md`:
+"why it lands". Drop naturally, don't recite. Save as `workspace/<job-slug>/cheatsheets/namedrop.md`:
 
 ```markdown
 ## One-line positioning (open with this)

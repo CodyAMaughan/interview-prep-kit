@@ -1,0 +1,41 @@
+{
+  "artifact": "plan",
+  "persona": "backend-strong",
+  "criteria": [
+    {
+      "id": "L1",
+      "score": 5,
+      "evidence": "Constraints: Days until interview: 10; Rounds: recruiter screen (30 min, non-technical) -> technical screen (60 min: coding + systems/data-modeling) -> onsite (system design + deep-dive on past work + values/leadership)",
+      "reason": "Timeline (10 days) and the full round structure are captured verbatim from the JD's Interview process section and are actively used by the day-by-day cadence."
+    },
+    {
+      "id": "L2",
+      "score": 5,
+      "evidence": "Day 1: build-stories...; Day 2: research-prep... rehearse the recruiter-screen pitch since the screen is non-technical and could be first; Day 3: System-design track; Day 7: Mock technical screen",
+      "reason": "Sequencing matches the JD's actual round shape and front-loads what comes first: stories + research/pitch for the early recruiter screen, then coding/systems for the technical screen, then system design for the onsite. Matches expectations exactly (front-load stories + ledger deep-dive + system-design refresh)."
+    },
+    {
+      "id": "L3",
+      "score": 5,
+      "evidence": "Priority queue table with columns Action / Skill to run / Maps to / Must-do?, e.g. 'System-design track... | build-curriculum | onsite system design' and 'Live-coding warm-up... | drill | technical screen coding'",
+      "reason": "Every action names a concrete skill and the specific round/gap it serves. The mapping is precise and round-specific, not generic."
+    },
+    {
+      "id": "L4",
+      "score": 5,
+      "evidence": "'Done' looks like: Defend every strong JD line cold with the meta-move: ledger latency (410->95ms)...; Whiteboard a payments ledger... in ~45 min... without notes; Deliver each STAR story in <=90s, 'I' not 'we', landing on a number",
+      "reason": "Concrete, honest, measurable readiness bar tied to real numbers and behaviors (no notes, timed, 'I' not 'we'). No platitudes. Even flags the mentorship answer needs a concrete outcome."
+    },
+    {
+      "id": "L5",
+      "score": 5,
+      "evidence": "Day 2: rehearse the recruiter-screen pitch since the screen is non-technical; coding mapped to 'technical screen coding', system design mapped to 'onsite system design'",
+      "reason": "No mis-prioritization: it explicitly avoids system-design/tech prep for the non-technical recruiter screen (the named failure mode) and routes coding to the technical screen and system design to the onsite. Correct allocation throughout."
+    }
+  ],
+  "mean": 5.0,
+  "min": 5,
+  "red_flags": [],
+  "pass": true,
+  "highest_leverage_fix": ""
+}

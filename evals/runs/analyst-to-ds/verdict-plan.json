@@ -1,0 +1,41 @@
+{
+  "artifact": "plan",
+  "persona": "analyst-to-ds",
+  "criteria": [
+    {
+      "id": "L1",
+      "score": 5,
+      "evidence": "Constraints: Days until interview: 10; Rounds: recruiter screen (30m) → technical screen (60m...) → onsite (virtual: ML system design · past-project deep-dive · experimentation case · behavioral)",
+      "reason": "Both the timeline (10 days) and the full round structure are captured and then actively used to drive the day-by-day cadence and sequencing."
+    },
+    {
+      "id": "L2",
+      "score": 5,
+      "evidence": "Round-aware note: the recruiter screen needs only the pitch + stories + 'why Helio' — do not lead with ML system design there. Front-load the production-ML cluster for the technical screen and onsite, which are where it's actually tested.",
+      "reason": "Sequencing matches the JD's three rounds exactly; the explicit note front-loads what each round tests and warns against leading with ML system design at the non-technical recruiter screen."
+    },
+    {
+      "id": "L3",
+      "score": 5,
+      "evidence": "| 2 | Close the production-ML gap... | build-curriculum | technical modeling problem + onsite ML system design | ✅ |",
+      "reason": "Every priority-queue action names a concrete skill and the specific round/gap it serves (Maps to column), with must-do flags distinguishing core from high-ROI extras."
+    },
+    {
+      "id": "L4",
+      "score": 5,
+      "evidence": "Recall the production-ML lifecycle cold: notebook → serving → monitoring → drift detection → retraining, and sketch a churn-model serving design on a whiteboard in ~10 minutes.",
+      "reason": "The 'Done looks like' bar is concrete and testable (deliver stories in <=90s, sketch a serving design in ~10 min, handle a window-function/CTE problem without hesitation), not platitudes."
+    },
+    {
+      "id": "L5",
+      "score": 5,
+      "evidence": "build-curriculum — production-ML track... (Biggest gap, start early.)' and the watch-item is satisfied: build-curriculum for the real ML-production gap is a must-do (✅), while stories/experimentation are front-loaded for winnable cases.",
+      "reason": "No mis-prioritization: the real gap (production ML) is the must-do curriculum focus, experimentation/SQL strengths are sharpened for the cases he can win, and the plan correctly avoids over-prepping ML at the recruiter screen."
+    }
+  ],
+  "mean": 5.0,
+  "min": 5,
+  "red_flags": [],
+  "pass": true,
+  "highest_leverage_fix": ""
+}

@@ -1,0 +1,41 @@
+{
+  "artifact": "profile",
+  "persona": "ic-to-manager",
+  "criteria": [
+    {
+      "id": "P1",
+      "score": 5,
+      "evidence": "Staff engineer, 11 years in developer-platform and backend systems, with 2 years acting as tech lead for a ~6-engineer team — strong influence/mentoring track record, stepping up to a formal people-management role.",
+      "reason": "One sentence, true to the resume (11 yrs, staff/platform, acting lead ~6 for 2 yrs). Names the real strongest signal (technical leadership/mentoring) and honestly frames 'stepping up to' rather than claiming a formal manager title — exactly the expected headline."
+    },
+    {
+      "id": "P2",
+      "score": 5,
+      "evidence": "CI/CD platform rewrite cut median build time 18 min → 6 min across 200+ services | Platform-caused incidents cut ~40% | 5 engineers mentored, 2 mentees promoted to senior",
+      "reason": "Inventory captures every load-bearing experience in the expected set (18→6 min, 200+ services, ~40% incidents, ~6 led, 5 mentored/2 promoted, Vantage pipeline + onboarding). Nothing major dropped; Vantage scale honestly flagged rather than padded."
+    },
+    {
+      "id": "P3",
+      "score": 5,
+      "evidence": "Disagreeing up with data — backed by the headcount-cut episode: used incident data to argue the platform was load-bearing, proposed lending 2 engineers temporarily instead of a permanent cut.",
+      "reason": "Every strength cites a specific experience (rewrite, headcount episode, API standoff, mentoring/promotions, reliability program). No free-floating adjectives; each is a claim defensible cold from the persona."
+    },
+    {
+      "id": "P4",
+      "score": 5,
+      "evidence": "Any experience adjacent to formal management — e.g. interviewing candidates, writing peer-review feedback, owning a hiring-loop slice — even if not as hiring manager of record? ... Has she ever delivered formal/written performance feedback (vs. informal mentoring)?",
+      "reason": "Open questions target genuinely missing/ambiguous info (Vantage numbers, mentee denominator, adjacency to formal mgmt, formal perf feedback). These probe the exact formal-management gap the persona flags, asked rather than invented."
+    },
+    {
+      "id": "P5",
+      "score": 5,
+      "evidence": "Vantage Analytics ... ⚠️ needs a number (pipeline scale/throughput not in persona)",
+      "reason": "Cross-checked every number: 11 yrs, ~6 engineers/2 yrs, 200+ services, 18→6 min, ~40% incidents, 5 mentored/2 promoted, Vantage 2014–2019 — all trace to the persona. The single unknown (Vantage scale) is explicitly ⚠️-flagged, not fabricated. Zero invented metrics."
+    }
+  ],
+  "mean": 5.0,
+  "min": 5,
+  "red_flags": [],
+  "pass": true,
+  "highest_leverage_fix": ""
+}

@@ -1,0 +1,41 @@
+{
+  "artifact": "fit",
+  "persona": "growth-pm",
+  "criteria": [
+    {
+      "id": "F1",
+      "score": 5,
+      "evidence": "Reverse-map table quotes 12 JD lines verbatim ('Run a high-velocity experimentation program: design experiments, define guardrail metrics, and make ship/no-ship calls from results.') each paired with specific evidence ('Owns experimentation roadmap; made the ship call on onboarding redesign; killed mandatory tutorial via holdout (-6% activation)').",
+      "reason": "Comprehensive coverage of every required and nice-to-have JD line, each quoting the JD and citing concrete persona evidence. No major JD line dropped."
+    },
+    {
+      "id": "F2",
+      "score": 5,
+      "evidence": "Experimentation fundamentals=strong, analytics/SQL=strong, measurable funnel impact=strong, experimentation program=strong; 'own a growth area: roadmap, prioritize backlog, write PRDs'=partial; nice-to-have 'full product roadmap and backlog end to end'=GAP.",
+      "reason": "Every label matches the expectations answer key: all four experimentation/data lines correctly strong (no underselling), roadmap/PRD line correctly partial, full-roadmap nice-to-have correctly GAP (expected partial/GAP). No mislabel of the anti-trap line."
+    },
+    {
+      "id": "F3",
+      "score": 5,
+      "evidence": "'I ran ~60 experiments/year ... -> the textbook approach is a fixed-horizon A/B test sized by MDE -> I leaned on CUPED and sequential testing to get reads faster ... accepting the added analytical complexity for velocity.'",
+      "reason": "Each of five strong lines has a concrete what-you-did -> SOTA -> trade-off meta-move, not a restated bullet. The CUPED/sequential-vs-fixed-horizon and vanity-metric examples are specific and defensible."
+    },
+    {
+      "id": "F4",
+      "score": 4,
+      "evidence": "GAP map lists full-roadmap+backlog as priority 🔴, PRD craft 🔴, quarterly planning 🟠, prioritization framework 🟠, product-sense 🟠, design/technical depth 🟡, plus a ⚠️-flagged per-feature-numbers gap.",
+      "reason": "The must-find gaps (full product ownership, deeper design/technical partnership) are present, mapped to JD lines, and prioritized with a sensible weight×weakness÷cost feel. Dock one point: expectations call these gaps moderate (🟠) given the role suits him; the artifact escalates the two core ones to 🔴, slightly over-weighting the stretch."
+    },
+    {
+      "id": "F5",
+      "score": 5,
+      "evidence": "'This is a resurfacing-plus-stretch profile, not a learning-from-scratch one ... The genuine stretch is the product-craft half: owning a full product roadmap and backlog across a quarter, writing full PRDs ... lean on the fact that the role is experimentation-heavy, so they're strongest exactly where this role is weighted most.'",
+      "reason": "Matches the expected verdict precisely: sharpening the experimentation strength while growing into full product craft. Names the partial honestly without underselling the experimentation edge; no rubber-stamping of the product-ownership gap."
+    }
+  ],
+  "mean": 4.8,
+  "min": 4,
+  "red_flags": [],
+  "pass": true,
+  "highest_leverage_fix": "None required to pass. Minor: the FIT step prompt could anchor GAP-priority color to the overall fit proportion (when the role plays to a strength, a stretch gap is typically 🟠 not 🔴) to avoid over-escalating moderate gaps."
+}

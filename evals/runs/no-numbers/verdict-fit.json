@@ -1,0 +1,41 @@
+{
+  "artifact": "fit",
+  "persona": "no-numbers",
+  "criteria": [
+    {
+      "id": "F1",
+      "score": 5,
+      "evidence": "Each row quotes a JD line verbatim (\"3+ years building web applications in production.\") and cites specific evidence (\"~5 years across Lattice (customer-facing web app) and Cedar & Pine (internal tools)\"). Covers all four Required lines, several What-you'll-do lines, and all three nice-to-haves.",
+      "reason": "Reverse-map coverage is thorough: every key JD line is quoted and mapped to concrete persona evidence. Nothing load-bearing is dropped."
+    },
+    {
+      "id": "F2",
+      "score": 4,
+      "evidence": "\"Evidence of measurable impact...\" -> \"GAP\" (matches answer key); \"3+ years...\" -> strong, \"modern backend stack and SQL\" -> strong (both within expected strong/partial); BUT \"A track record of shipping features and owning their quality (testing, code review).\" -> \"strong\" where expectations call it partial (\"claims it, unquantified\").",
+      "reason": "The critical GAP line (measurable impact) and the nice-to-have before/after line are both correctly labeled GAP. One mild over-grade: the testing/quality line is marked strong when the answer key expects partial because it's unquantified. Minor slack, not a mislabel of the key gap."
+    },
+    {
+      "id": "F3",
+      "score": 4,
+      "evidence": "\"Owning quality (testing/code review) -> the standard is tests + CI + review gates... trade-off to name: you pushed testing culture incrementally (adoption over mandate) rather than enforcing coverage gates top-down.\"",
+      "reason": "Meta-moves are concrete and name a real trade-off rather than restating the bullet. Honestly flags thin written evidence (\"prep this - the evidence is thin in writing\") and reminds to fetch the number, not invent it. Slightly generic on the SQL line, hence not a 5."
+    },
+    {
+      "id": "F4",
+      "score": 5,
+      "evidence": "GAP map leads with \"Zero quantified impact anywhere ... 🔴\" and cost \"med (dig up real metrics ... do NOT invent)\"; prioritization paragraph: \"the quantified-impact gap is #1 - highest JD weight, total current weakness, and only medium cost.\"",
+      "reason": "The must-find gap from expectations (lack of quantified evidence as a standalone risk) is present, ranked #1, and explicitly tied to the (weight x weakness / cost) formula. Other gaps (backend depth, system design, SQL, AWS) are real and sensibly ordered."
+    },
+    {
+      "id": "F5",
+      "score": 5,
+      "evidence": "\"This is mostly a resurfacing + evidence-gathering job, not learning-from-scratch... The skills aren't missing; the proof is... The honest line for the room: 'I owned X and Y; let me get you the exact numbers' - and then actually get them before the interview, never invent them.\"",
+      "reason": "Matches the expected verdict exactly: skills present but undemonstrated, named plainly, pushes the candidate to recover real numbers rather than paper over the absence. No rubber-stamping; the storytelling/evidence gap is named as the biggest risk."
+    }
+  ],
+  "mean": 4.6,
+  "min": 4,
+  "red_flags": [],
+  "pass": true,
+  "highest_leverage_fix": "Tighten the FIT step's match-strength calibration so an UNQUANTIFIED 'I did X' claim caps at 'partial', not 'strong' (the testing/quality line should be partial per the answer key). Reserve 'strong' for evidence that is both present and demonstrable."
+}

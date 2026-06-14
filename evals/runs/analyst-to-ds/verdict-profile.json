@@ -1,0 +1,41 @@
+{
+  "artifact": "profile",
+  "persona": "analyst-to-ds",
+  "criteria": [
+    {
+      "id": "P1",
+      "score": 5,
+      "evidence": "Data analyst with 5 years in consumer subscription businesses — strongest signal is a rigorous experimentation program (~40 A/B tests/year) plus expert SQL; has modeled in notebooks but never shipped a model to production.",
+      "reason": "One sentence carrying years + domain + the true strongest signal (experimentation + SQL), and it names the production-ML gap honestly in the same breath. Matches the expected headline exactly."
+    },
+    {
+      "id": "P2",
+      "score": 5,
+      "evidence": "Table rows: ~40 tests/year; Trial-to-paid 4.1% -> 5.0% (held in clean cohort); AUC ~0.78; Saved ~6 analyst-hours/week; +12% reactivation; churn dashboard used daily by growth + product.",
+      "reason": "Every load-bearing experience and its real number from the persona is captured: 40 A/B tests/yr, 4.1->5.0%, AUC 0.78 (flagged notebook-only), +12% reactivation, ~6 analyst-hrs/wk. Nothing major dropped; the dashboard's missing number is honestly flagged rather than invented."
+    },
+    {
+      "id": "P3",
+      "score": 5,
+      "evidence": "Experiment design and causal reads — backed by owning ~40 A/B tests/year and the pricing experiment where they handled a mid-test confound...; Influencing product with data over hunches — backed by the paywall-redesign A/B test that found flat conversion but -8% retention.",
+      "reason": "Every strength cites a specific, traceable experience. No free-floating adjectives. Notably labels modeling as 'Predictive modeling fundamentals (offline)' — correctly scoped, not inflated into production ML."
+    },
+    {
+      "id": "P4",
+      "score": 5,
+      "evidence": "Churn dashboard impact: how many users/teams rely on it daily, and did it change any decision or metric? (currently unquantified); Churn model: ... Any reason it was never deployed (org constraints vs. own scope)?; Python software-engineering exposure: any testing, code review, or CI experience at all, even light?",
+      "reason": "Genuinely missing/ambiguous info is surfaced as specific, answerable questions instead of guessed. The dashboard impact gap and the SWE-rigor ambiguity are both asked, and the 5-yr-vs-4+-yr framing is flagged for confirmation rather than asserted."
+    },
+    {
+      "id": "P5",
+      "score": 5,
+      "evidence": "AUC ~0.78; presented top churn drivers; Notebook only; never deployed/monitored; Trial-to-paid conversion 4.1% -> 5.0% (held in clean cohort); Saved ~6 analyst-hours/week; +12% reactivation.",
+      "reason": "Cross-checked every number against the persona: 40 tests/yr, 4.1->5.0%, AUC 0.78, +12%, ~6 hrs/wk, -8% retention, dbt+Looker, used daily by growth+product — all trace exactly. No fabricated metric. The notebook model is explicitly marked 'never deployed/monitored', avoiding the production-ML upgrade trap."
+    }
+  ],
+  "mean": 5.0,
+  "min": 5,
+  "red_flags": [],
+  "pass": true,
+  "highest_leverage_fix": ""
+}

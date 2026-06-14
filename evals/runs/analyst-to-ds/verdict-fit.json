@@ -1,0 +1,41 @@
+{
+  "artifact": "fit",
+  "persona": "analyst-to-ds",
+  "criteria": [
+    {
+      "id": "F1",
+      "score": 5,
+      "evidence": "Reverse-map table quotes every key JD line verbatim ('Expert SQL', 'Strong experiment design and causal-inference fundamentals', 'Experience taking at least one ML model to production — deployment, monitoring, and iteration') and cites specific persona evidence for each.",
+      "reason": "Comprehensive coverage: all required lines plus nice-to-haves are mapped, each quoting the JD and citing concrete evidence from the persona."
+    },
+    {
+      "id": "F2",
+      "score": 5,
+      "evidence": "'Expert SQL' = strong; experiment design = strong; 'Experience taking at least one ML model to production' = **GAP**; 'Build feature pipelines and own the model lifecycle... drift detection' = **GAP**; 'production-quality, tested Python' = **GAP'. Python modeling line marked 'strong (offline only)'.",
+      "reason": "Every label agrees with the expectations answer key. The critical production-ML line is correctly GAP, not strong/partial. The 'strong (offline only)' qualifier on the Python line is honest and accurate."
+    },
+    {
+      "id": "F3",
+      "score": 5,
+      "evidence": "Meta-moves follow the 'what you did → SOTA → trade-off' shape, e.g. 'I segmented out a confounded cohort... → the textbook approach is to pre-register and protect randomization (and use CUPED to cut variance) → I chose transparent dual-reporting with caveats because the confound was already live and I couldn't re-randomize'.",
+      "reason": "Concrete and non-trivial for each strong line; names SOTA and the real trade-off rather than restating a bullet."
+    },
+    {
+      "id": "F4",
+      "score": 5,
+      "evidence": "GAP map leads with 'Production ML deployment (notebook → serving)' 🔴 mapped to a Required line, plus monitoring/drift 🔴 and ML system design 🔴; prioritization note: 'the production-ML cluster... is the biggest, most-probed gap and gets the dedicated onsite round, so it leads — even though it's the most expensive to close'.",
+      "reason": "All must-find gaps present, mapped to JD lines, and prioritized via the (weight × weakness ÷ cost) logic with an honest acknowledgment that cost is high but JD weight dominates."
+    },
+    {
+      "id": "F5",
+      "score": 5,
+      "evidence": "'This is a **resurfacing-plus-learning split**... Experiment design, causal inference, and SQL are *resurfacing*... Production ML — serving, monitoring, retraining, ML system design — is *learning from scratch*; the candidate... has never crossed the notebook boundary.'",
+      "reason": "Matches the expected analytics-strong / ML-production-new verdict exactly; named plainly, no rubber-stamping, gives a credible in-room line that owns the gap."
+    }
+  ],
+  "mean": 5.0,
+  "min": 5,
+  "red_flags": [],
+  "pass": true,
+  "highest_leverage_fix": ""
+}

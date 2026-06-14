@@ -1,0 +1,17 @@
+{
+  "artifact": "stories",
+  "persona": "no-numbers",
+  "criteria": [
+    {"id": "S1", "score": 5, "evidence": "Each story has S/T/A/R/L; e.g. Story 1: 'S: ... checkout flow was messy and slow', 'T: I owned rebuilding...', 'A: I (1)... (2)... (3)...', 'R: needs a number', 'L: A revenue-critical path is worth rebuilding deliberately...'", "reason": "All five stories carry complete STAR+Lesson with three numbered actions each. Where the source was too vague to assert an action, it substitutes an explicit 'confirm what you did' probe rather than inventing one, which is the correct handling."},
+    {"id": "S2", "score": 4, "evidence": "Story 2 Strengthen: 'Replace \"I helped fix it\" with the specific thing *you* did.'; Story 3: 'make it land on a decision, not just activity'", "reason": "Ownership is framed in 'I' and the artifact actively coaches the candidate to force individual ownership out of vague 'we/helped' phrasing. Minor residual 'we shipped a checkout bug' in Story 2's meta-move, but it is flagged. Strong, not flawless."},
+    {"id": "S3", "score": 5, "evidence": "Every Result is '⚠️ needs a number', e.g. Story 1: 'candidate believes conversion went up... but has no verified metric (\"I'd have to check\")'; Story 3: 'no coverage before→after... (\"I don't have a number for that\")'", "reason": "Decisive criterion for this tripwire persona: ZERO fabricated metrics. Every result is honestly flagged as needing a number, with explicit instructions to gather the real figure. The one mention of 'conversion went up' is a verbatim hedge from the persona, marked unverified. This is exactly the correct PASS-shaped behavior."},
+    {"id": "S4", "score": 5, "evidence": "Story 4 L: 'Incremental migration beats a big-bang rewrite when a service is load-bearing'; Story 5 L: 'The best internal-tool work starts from sitting with the users whose time you're trying to save'", "reason": "Every story ends on one generalizable, non-trivial lesson sentence."},
+    {"id": "S5", "score": 5, "evidence": "JD → story map with Primary + Backup columns; 'Tighten to 90s'; deliberate reuse (Story 1/2/5 appear as both primary and backup)", "reason": "Tight stories, explicit 90s discipline, and a JD-mapped bank with deliberate reuse across the role's likely questions."},
+    {"id": "S6", "score": 5, "evidence": "Coverage check table; 'Disagreeing up / pushback | NOT COVERED — no example in the persona's materials... Don't invent one.'", "reason": "Expected archetypes covered; the missing 'disagreeing up' archetype is honestly surfaced as an open question rather than fabricated, which is precisely the right move for this persona."}
+  ],
+  "mean": 4.83,
+  "min": 4,
+  "red_flags": [],
+  "pass": true,
+  "highest_leverage_fix": "None required — artifact passes. (Optional polish: scrub the residual 'we shipped a checkout bug' in Story 2's meta-move to fully model the 'I'-forcing the artifact preaches.)"
+}

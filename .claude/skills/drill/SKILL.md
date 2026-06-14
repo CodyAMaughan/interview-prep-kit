@@ -10,7 +10,7 @@ description: Active-recall drills between bigger study sessions — closed-book 
 > live answer feed.
 
 Short, frequent recall sessions on the user's gaps. Pulls weak spots from `.agent/memory/progress/`
-(populated by the curriculum loop) and the `workspace/tracks/` quizzes.
+(populated by the curriculum loop) and the `workspace/<job-slug>/tracks/` quizzes.
 
 ## Procedure
 1. **Pick targets.** Read `.agent/memory/progress/weak-spots.md` and any `spaced-repetition.md` items

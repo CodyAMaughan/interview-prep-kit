@@ -1,0 +1,41 @@
+{
+  "artifact": "plan",
+  "persona": "growth-pm",
+  "criteria": [
+    {
+      "id": "L1",
+      "score": 5,
+      "evidence": "Constraints: Days until interview: 10 ... Rounds: Recruiter screen (30m) → Hiring-manager screen (45m: background + growth/experimentation case) → Onsite (virtual): product-sense case · experimentation/analytics case · execution/roadmap case · behavioral.",
+      "reason": "Timeline (10 days) and the full round structure are captured verbatim from the JD and then actively used to drive the day-by-day cadence."
+    },
+    {
+      "id": "L2",
+      "score": 5,
+      "evidence": "Day 8: mock-interview — timed HM growth/experimentation case ... Day 9: mock-interview — timed execution/roadmap case (this is the gap-aligned case); item 4 'Build the experimentation cheatsheet ... sharpen the strength so it's automatic ... experimentation/analytics case + HM case'.",
+      "reason": "Sequencing matches the JD's round shape: stories/research front-loaded for recruiter+HM+behavioral, experimentation case (his win condition) sharpened for the HM screen, gap-aligned execution/roadmap and product-sense reserved for onsite. The experimentation case that is his best shot is front-loaded, not ignored."
+    },
+    {
+      "id": "L3",
+      "score": 5,
+      "evidence": "Priority-queue table columns Action / Skill to run / Maps to / Must-do?; e.g. '3 | Close the product-craft gaps ... | build-curriculum | execution/roadmap + product-sense cases | ✅' and '5 | Chase per-feature impact numbers ... | (user homework) | \"drive measurable impact\" answers | ✅'.",
+      "reason": "Every action names a concrete skill and the round/gap it serves; the queue explicitly maps the partial gaps (product craft) to the right onsite cases and the strength to the HM/analytics case."
+    },
+    {
+      "id": "L4",
+      "score": 5,
+      "evidence": "'Done' looks like: 'Can name the gap out loud as a credible stretch: \"experimentation half I own cold; roadmap/PRD/quarterly-planning half I'm growing into\" ... Each of the 5–7 stories delivered in ≤90s, on a concrete decision + a real number (or an honest ⚠️ flag, never an invented one).' and 'Product-sense case no longer a cold spot ... not just optimize an existing funnel.'",
+      "reason": "Concrete, honest, falsifiable readiness bar — not platitudes. It bakes in the honest-stretch framing, the anti-fabrication rule, and a specific behavioral upgrade for the weakest case type."
+    },
+    {
+      "id": "L5",
+      "score": 5,
+      "evidence": "No coding-grind or system-design item anywhere; instead item 6 'Product-sense reps ... (the candidate's weaker case type)' and day 5 'quarterly planning track'. SQL appears only inside the strength cheatsheet context, not over-prepped.",
+      "reason": "No mis-prioritization: it doesn't prescribe heavy coding or system design for this product/leadership-flavored loop, and it weights effort toward the partial gaps (product craft, product-sense) while keeping the experimentation strength sharp rather than over-grinding it."
+    }
+  ],
+  "mean": 5.0,
+  "min": 5,
+  "red_flags": [],
+  "pass": true,
+  "highest_leverage_fix": ""
+}

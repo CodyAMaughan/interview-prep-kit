@@ -10,9 +10,9 @@ description: Research the target company and the specific people the candidate w
 > public research about the company and the people they'll meet, so the conversation is informed.
 
 You build the user's situational awareness for the conversation: what the company does, why they'd
-join, and who's across the table. Output goes to `workspace/research/`.
+join, and who's across the table. Output goes to `workspace/<job-slug>/research/`.
 
-## Step 1 — Company brief → `workspace/research/<company>-brief.md`
+## Step 1 — Company brief → `workspace/<job-slug>/research/brief.md`
 
 Gather from public sources (company site, newsroom/blog, the JD, press, funding databases — paste-in
 or fetch where allowed). Write:
@@ -39,7 +39,7 @@ the "③ are you genuinely interested in US?" answer a screen is testing.>
 - <one that shows you read their recent news> · <one about the team's actual problems>
 ```
 
-## Step 2 — Per-interviewer playbook → `workspace/research/interviewers/<name>.md`
+## Step 2 — Per-interviewer playbook → `workspace/<job-slug>/research/interviewers/<name>.md`
 
 For **each** known interviewer (name + title from the recruiter/scheduler), research publicly
 (LinkedIn — note it may be blocked; fall back to a pasted profile — talks, papers, GitHub, podcasts):
@@ -71,7 +71,7 @@ For **each** known interviewer (name + title from the recruiter/scheduler), rese
 
 ## Step 3 — JD reverse-mapping (reuse / extend prep-intake's)
 
-If `workspace/fit-<company>.md` already has a JD reverse-map, pull its strong lines here as
+If `workspace/<job-slug>/fit.md` already has a JD reverse-map, pull its strong lines here as
 **talking points** per round. If not, build it: each JD line → the candidate's evidence → the meta-move
 (what you did → SOTA → trade-off). This is what turns research into things to actually *say*.
 

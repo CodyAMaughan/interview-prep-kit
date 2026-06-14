@@ -1,0 +1,41 @@
+{
+  "artifact": "profile",
+  "persona": "ops-to-pm",
+  "criteria": [
+    {
+      "id": "P1",
+      "score": 5,
+      "evidence": "\"7-year operations & project manager in logistics and healthcare ops ... career switcher into product with no formal PM or engineering experience.\"",
+      "reason": "One sentence; matches the resume (7 yrs ops/PM, logistics + healthcare); names the real strongest signal (cross-functional program ownership) and explicitly frames as career switcher, NOT 'product manager.' Matches the expected headline exactly."
+    },
+    {
+      "id": "P2",
+      "score": 5,
+      "evidence": "\"Onboarding time 11 weeks -> 7 weeks\", \"~$220k/year supply-cost savings\", \"5 warehouse sites ... Scheduling errors cut ~one third\", \"14 new clinic locations\"",
+      "reason": "Evidence inventory captures every load-bearing experience and all real numbers the expectations call for (11->7 wks, $220k, -1/3 errors, 14 clinics, 5 sites). Nothing major dropped; vendor-liaison 'did not build' nuance preserved."
+    },
+    {
+      "id": "P3",
+      "score": 5,
+      "evidence": "\"Cross-functional program ownership - backed by the 14-clinic onboarding program ...\"; \"Disagreeing up with data - backed by pushing back on the 14-sites-in-one-quarter plan with staffing math\"",
+      "reason": "Every strength cites a specific experience; no free-floating adjectives. Strengths are explicitly framed as transferable operating skills (stakeholder mgmt, prioritization, turning fuzzy pain into ranked issues), never claimed as product experience."
+    },
+    {
+      "id": "P4",
+      "score": 5,
+      "evidence": "\"Open questions: ... Any exposure to PRDs, agile/discovery techniques, or working with designers (resume says none - confirm).\"; \"what she has NOT done is own a product backlog, write a PRD, or ship software with designers and engineers\"",
+      "reason": "Genuinely missing info (team size, # programs, SQL depth, metrics ownership, PRD/agile exposure) is asked for, not invented. The dominant PM-craft gap is surfaced honestly rather than guessed or papered over."
+    },
+    {
+      "id": "P5",
+      "score": 5,
+      "evidence": "Two ambiguous metrics are marked \"⚠️ needs a number (team size, # programs)\" and \"⚠️ needs a number (issues triaged, adoption)\" rather than invented.",
+      "reason": "Cross-checked every number against the persona: 7 yrs, 14 clinics, 11->7 wks, ~$220k, 5 sites, ~1/3 error cut all trace exactly. No fabricated product/PM/engineering experience. Missing numbers flagged, not invented. Zero fabrication."
+    }
+  ],
+  "mean": 5.0,
+  "min": 5,
+  "red_flags": [],
+  "pass": true,
+  "highest_leverage_fix": ""
+}
