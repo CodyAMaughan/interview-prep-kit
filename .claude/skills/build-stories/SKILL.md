@@ -53,6 +53,10 @@ up until each STAR field is concrete:
 If the user gives a fuzzy result ("it went well"), keep probing or mark it `⚠️ needs a number` rather
 than fabricating one.
 
+If the interview surfaces a real experience that isn't yet in `workspace/profile.md`'s evidence
+inventory, **add it to that bank too** (with tags) — it's shared and reused across every future job, so
+a story you dig up here shouldn't have to be re-discovered next time.
+
 ## Step 3 — Write each story
 
 Append to `workspace/stories.md`:

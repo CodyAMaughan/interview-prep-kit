@@ -70,8 +70,11 @@ Sources to request (all optional except a JD and *some* experience signal):
 
 ## Step 2 — PROFILE (synthesize who they are)
 
-From the inputs, write `workspace/profile.md` (shared across all jobs). Be concrete and evidence-based — pull real numbers,
-systems, and scope from their materials. Schema:
+`workspace/profile.md` is the **shared, reusable experience bank** — it belongs to the candidate, not to
+any one job, and it grows over time. **If it already exists from a previous job, READ it first and
+ENRICH it** (add newly-surfaced experiences, sharpen numbers) — do **not** overwrite what's there. If
+it doesn't exist, create it. Be concrete and evidence-based — pull real numbers, systems, and scope from
+their materials. Schema:
 
 ```markdown
 # Candidate Profile
@@ -79,10 +82,10 @@ systems, and scope from their materials. Schema:
 ## Headline
 <one sentence: years + domain + the strongest signal>
 
-## Evidence inventory (the raw material for everything downstream)
-| Experience / project | Scope & scale | Tech / methods | Quantified impact |
-|---|---|---|---|
-| <role/project> | <team size, data scale, $> | <stack> | <metric, before→after> |
+## Evidence inventory (the experience bank — the raw material for everything downstream, reused across jobs)
+| Experience / project | Scope & scale | Tech / methods | Quantified impact | Tags / relevant to |
+|---|---|---|---|---|
+| <role/project> | <team size, data scale, $> | <stack> | <metric, before→after> | <skills, domains, archetypes this could speak to — e.g. "streaming · on-call · leadership"> |
 
 ## Strengths (claims you can defend cold)
 - <strength> — backed by <which experience>
@@ -125,6 +128,29 @@ ones? Name it so the user can say it in the room.>
 
 The GAP map is the heart of the tool. Prioritize by **(JD weight) × (current weakness) ÷ (cost to
 close)** — biggest, cheapest, most-probed gaps first.
+
+## Step 3.5 — Surface hidden experience (targeted clarifying questions)
+
+A résumé under-sells. The FIT map just showed you exactly where this role cares and where the evidence
+looks thin — that's your guide for what to ask. **Before** planning, run a short, targeted clarifying
+pass to pull out real experience the résumé only hinted at (and to attach numbers).
+
+1. From the FIT map, pick the **partial matches** and **GAPs** that a hidden experience could plausibly
+   fill, plus any résumé line mentioned in passing that maps to something the JD weights heavily.
+2. Ask a **bounded batch — ~3–6 of the highest-leverage questions** (don't interrogate). Make each one
+   specific and tied to the JD, e.g.:
+   - *"Your résumé mentions <thin line> in one line — did that involve <JD requirement>? What did you
+     decide, and what was the outcome (a number, before→after)?"*
+   - *"This role leans on <JD theme>. Anything you've done there that didn't make the résumé?"*
+   - *"You list <tech/skill> — was that production ownership or exposure? What's the most you did with it?"*
+3. **You are eliciting real experience, never inventing it.** If the user confirms something, fold it
+   into the `workspace/profile.md` evidence bank (new row or sharpened number + tags) and, if it
+   genuinely fills a FIT line, upgrade that line (GAP → partial/strong) with the new evidence. If they
+   have nothing for a question, leave the gap honest — don't manufacture an answer. Note strong answers
+   as **story seeds** for `build-stories`.
+
+This step is what turns a thin résumé into a real picture — and because the bank is shared, the
+experiences you surface here are reused on every future job.
 
 ## Step 4 — PLAN (prioritized, timeline + round aware)
 
@@ -173,5 +199,8 @@ non-technical screen.
 ## Done criteria for this skill
 - `workspace/` exists and is gitignored; shared inputs saved under `inputs/`, each JD under `<job-slug>/jd.md`.
 - `profile.md` (base, shared) is evidence-based with zero fabricated claims; open questions surfaced, not guessed.
+  On a repeat run it is **enriched, not overwritten** — the experience bank grows across jobs.
+- The clarifying pass (Step 3.5) asked targeted questions on the thin/partial JD areas and folded any
+  confirmed real experience into the bank (never invented); story seeds noted for `build-stories`.
 - A `<job-slug>/fit.md` per JD with a JD reverse-map + a prioritized GAP map.
 - `<job-slug>/plan.md` is timeline- and round-aware with a brutal "done" bar.
